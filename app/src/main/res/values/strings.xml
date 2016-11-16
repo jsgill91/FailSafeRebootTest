@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FailSafeReboot</string>
+    <color name="dim_grey">#696969</color>
+</resources>

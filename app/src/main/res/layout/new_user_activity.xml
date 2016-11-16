@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dim_grey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint=" Enter Username"
+            android:background="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/usrnm"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint=" Enter Password"
+            android:background="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/pswd"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/usrnm"
+            android:layout_alignStart="@+id/usrnm" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitButton"
+            android:layout_below="@+id/pswd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp" />
+    </RelativeLayout>
+</LinearLayout>

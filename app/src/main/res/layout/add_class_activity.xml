@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_class_screen">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" General Information:"
+            android:id="@+id/genInfo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="122dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cName"
+            android:layout_marginTop="11dp"
+            android:hint=" Course Name "
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_below="@+id/genInfo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/testWeightBox"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/testLabel"
+            android:layout_alignBottom="@+id/testLabel"
+            android:layout_alignRight="@+id/cName"
+            android:layout_alignEnd="@+id/cName"
+            android:layout_toRightOf="@+id/cID"
+            android:layout_toEndOf="@+id/cID" />
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/testLabel"
+            android:layout_toEndOf="@+id/testWeightBox"
+            android:id="@+id/symbol1"
+            android:layout_toRightOf="@+id/testWeightBox" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/quizWeightBox"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_below="@+id/testWeightBox"
+            android:layout_marginTop="13dp"
+            android:layout_alignRight="@+id/testWeightBox"
+            android:layout_alignEnd="@+id/testWeightBox"
+            android:layout_toEndOf="@+id/cID"
+            android:layout_toRightOf="@+id/cID"/>
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quizWeightBox"
+            android:layout_toRightOf="@+id/quizWeightBox"
+            android:layout_toEndOf="@+id/quizWeightBox"
+            android:id="@+id/symbol2" />
+
+        <TextView
+            android:text="Homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hwLabel"
+            android:layout_below="@+id/quizWeightBox"
+            android:layout_marginTop="21dp"
+            android:layout_alignLeft="@+id/cID"
+            android:layout_alignStart="@+id/cID" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/hwWeightBox"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/hwLabel"
+            android:layout_alignBottom="@+id/hwLabel"
+            android:layout_alignRight="@+id/cName"
+            android:layout_alignEnd="@+id/cName"
+            android:layout_toRightOf="@+id/quizLabel"
+            android:layout_toEndOf="@+id/quizLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Weight:"
+            android:id="@+id/weights"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/assgInfo"
+            android:layout_alignLeft="@+id/testLabel"
+            android:layout_alignStart="@+id/testLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Assignment Info:"
+            android:id="@+id/assgInfo"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/cID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="No. of Dropped Assignments:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropLabel"
+            android:layout_alignBottom="@+id/weights"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/genInfo"
+            android:layout_toEndOf="@+id/genInfo" />
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hwLabel"
+            android:layout_toRightOf="@+id/hwWeightBox"
+            android:layout_toEndOf="@+id/hwWeightBox"
+            android:id="@+id/symbol3" />
+
+        <TextView
+            android:text="Lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hwWeightBox"
+            android:layout_marginTop="16dp"
+            android:id="@+id/labLabel"
+            android:layout_alignRight="@+id/hwLabel"
+            android:layout_alignEnd="@+id/hwLabel"
+            android:layout_toEndOf="@+id/weights"
+            android:layout_toRightOf="@+id/weights"
+            android:layout_alignLeft="@+id/hwLabel"
+            android:layout_alignStart="@+id/hwLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:layout_alignBottom="@+id/labLabel"
+            android:id="@+id/labWeightBox"
+            android:layout_toLeftOf="@+id/symbol2"
+            android:layout_alignLeft="@+id/hwWeightBox"
+            android:layout_alignStart="@+id/hwWeightBox" />
+
+        <TextView
+            android:text="Quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quizLabel"
+            android:layout_above="@+id/hwLabel"
+            android:layout_toLeftOf="@+id/testWeightBox"
+            android:layout_alignLeft="@+id/hwLabel"
+            android:layout_alignStart="@+id/hwLabel" />
+
+        <TextView
+            android:text="Test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/testLabel"
+            android:layout_below="@+id/weights"
+            android:layout_alignStart="@+id/quizLabel"
+            android:layout_alignLeft="@+id/quizLabel" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/testDropBox"
+            android:layout_alignLeft="@+id/dropLabel"
+            android:layout_alignStart="@+id/dropLabel"
+            android:layout_alignBottom="@+id/symbol1" />
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/labLabel"
+            android:layout_toRightOf="@+id/labWeightBox"
+            android:layout_toEndOf="@+id/labWeightBox"
+            android:id="@+id/symbol4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/quizDrop"
+            android:layout_alignBottom="@+id/quizWeightBox"
+            android:layout_alignTop="@+id/quizWeightBox"
+            android:layout_alignRight="@+id/testDropBox"
+            android:layout_alignEnd="@+id/testDropBox"
+            android:layout_alignLeft="@+id/testDropBox"
+            android:layout_alignStart="@+id/testDropBox" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/hwDrop"
+            android:layout_alignBottom="@+id/hwWeightBox"
+            android:layout_alignTop="@+id/hwWeightBox"
+            android:layout_alignRight="@+id/testDropBox"
+            android:layout_alignEnd="@+id/testDropBox"
+            android:layout_alignLeft="@+id/quizDrop"
+            android:layout_alignStart="@+id/quizDrop" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/labDrop"
+            android:layout_alignBottom="@+id/labWeightBox"
+            android:layout_alignTop="@+id/labWeightBox"
+            android:layout_alignRight="@+id/testDropBox"
+            android:layout_alignEnd="@+id/testDropBox"
+            android:layout_alignLeft="@+id/hwDrop"
+            android:layout_alignStart="@+id/hwDrop" />
+
+        <!---->
+        <TextView
+            android:text="In-Class Assg."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/icaLabel"
+            android:layout_below="@+id/labLabel"
+            android:layout_alignStart="@+id/quizLabel"
+            android:layout_alignLeft="@+id/quizLabel" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/icaWeightBox"
+            android:layout_alignLeft="@+id/labWeightBox"
+            android:layout_alignStart="@+id/labWeightBox"
+            android:layout_alignBottom="@+id/icaLabel" />
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/icaLabel"
+            android:layout_toRightOf="@+id/icaWeightBox"
+            android:layout_toEndOf="@+id/icaWeightBox"
+            android:id="@+id/symbol5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/icaDrop"
+            android:layout_alignBottom="@+id/icaWeightBox"
+            android:layout_alignTop="@+id/icaWeightBox"
+            android:layout_alignRight="@+id/testDropBox"
+            android:layout_alignEnd="@+id/testDropBox"
+            android:layout_alignLeft="@+id/testDropBox"
+            android:layout_alignStart="@+id/testDropBox" />
+
+        <!---->
+        <TextView
+            android:text="Project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/projectLabel"
+            android:layout_below="@+id/icaLabel"
+            android:layout_alignStart="@+id/quizLabel"
+            android:layout_alignLeft="@+id/quizLabel" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/projectWeightBox"
+            android:layout_alignLeft="@+id/icaWeightBox"
+            android:layout_alignStart="@+id/icaWeightBox"
+            android:layout_alignBottom="@+id/projectLabel" />
+
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/projectLabel"
+            android:layout_toRightOf="@+id/projectWeightBox"
+            android:layout_toEndOf="@+id/projectWeightBox"
+            android:id="@+id/symbol6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="0"
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/projectDrop"
+            android:layout_alignBottom="@+id/projectWeightBox"
+            android:layout_alignTop="@+id/projectWeightBox"
+            android:layout_alignRight="@+id/testDropBox"
+            android:layout_alignEnd="@+id/testDropBox"
+            android:layout_alignLeft="@+id/testDropBox"
+            android:layout_alignStart="@+id/testDropBox" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/classSubmitBtn"
+            android:layout_below="@+id/symbol6"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cID"
+            android:hint=" Course ID "
+            android:textColorHint="#000000"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_below="@+id/cName"
+            android:layout_alignLeft="@+id/cName"
+            android:layout_alignStart="@+id/cName"
+            android:layout_marginTop="11dp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
